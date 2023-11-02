@@ -66,12 +66,6 @@ a {
 }
 .nav_links li a:hover {
     color: #DFCEBC
-
-}
-
-body {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
 }
 h4 {
     text-align: left;
@@ -131,77 +125,127 @@ form {
     text-align: center;
 }
 
-.slider-box {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-
+div{
+    text-align: center;
 }
 
-.slider-box ul{
+
+.grid_layout{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    padding: 20px;
+}
+.card{
+	width: 80%;
+	margin: 30px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	border-radius: 2px;
+	overflow: hidden;
+	background-color: #e7e6e5;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	cursor: default;
+	transition: all 400ms ease;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.card_bottom{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+.tags{
+	margin: auto;
+    align-self: center;
+    float: left;
     display: flex;
-    padding: 0%;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    justify-content: center;
+    text-align: center;
+}
+.tag_classification{
+	background-color: rgb(148, 144, 144);
+	padding:10px;
+	display: flex;
+	height: 15px;
+    width: 35px;
+	border-radius: 3px;
+    align-items: center;
+    float: left;
+    color: white;
+    margin: 5px;
+}
+.tag_classification:hover{
+	background-color: #4F6074;
+	color: white;
 }
 
-.slider-box li{
+.tag_duration{
+	background-color: #1A2C50;
+	padding:10px;
+	display: flex;
+	height: 15px;
+    width: 100px;
+	border-radius: 3px;
+    align-items: center;
+    float: left;
+    color: white;
+    margin: 5px;
+}
+.tag_duration:hover{
+	background-color: #4F6074;
+	color: white;
+}
+.viewMore_btn{
+    font-family: "Montserrat", sans-serif;
+    background-color: #DFCEBC;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.viewMore_btn:hover{
+	background-color: #4F6074;
+	color: white;
+}
+.movie_container{
+    background-color: #e7e6e5;
+    margin: 10%;
+    padding: 50px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.movie_info{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    text-align: left;
+    background-color: #cbc9c8;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.movie_hours{
+    padding: 10px;
     width: 100%;
-    list-style: none;
-    position: relative;
+    float: left;
 }
+.tag_hour{
+    margin: 5px;
+    padding: 5px;
+    background-color: #1A2C50;
+    color: white;
+    border-radius: 3px;
+    height: fit-content;
+    width: fit-content;
 
-.slider-box img{
-    width: 100%;
-    height: 60%;
-}
-
-@keyframes slide{
-    0%{
-        margin-left: 0;
-    }
-    20%{
-        margin-left: 0;
-    }
-    25%{
-        margin-left: -100%;
-    }
-    45%{
-        margin-left: -100%;
-    }
-    50%{
-        margin-left: -200%;
-    }
-    70%{
-        margin-left: -200%;
-    }
-    75%{
-        margin-left: -300%;
-    }
-    100%{
-        margin-left: -300%;
-    } 
-}
-
-@media (max-width: 991px){
-    .body{
-        padding: 30px;
-    }
-    .slider-box{
-        width: 100%;
-        height: 100%;
-    }
-    .slider-box ul{
-        width: 400%;
-    }
-    .slider-box li{
-        width: 25%;
-    }
-    
-    .nav_links li a{
-        display: block;
-        
-        padding: 3px 20px;
-        font-size: 11px;
-    }
 }
