@@ -4,25 +4,50 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #F6F6F6;
-    
 }
-li,a {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    background-color: #1A2C50;
+}
+body {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 4em;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 80%;
+}
+footer {
+    background-color: #4F6074;
+    position: absolute;
+    bottom: 0;
+    padding: 1em 0;
+    width: 100%;
+    color: white;
+    height: 70px;  
+    text-align: center; 
+}
+a {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 16px;
     color:#FFFFFF;
     text-decoration: none;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: #1A2C50;
-
-}
 .logo {
+    cursor: pointer;
+    border-radius: 5px;
+}
+.index_link{
     cursor: pointer;
     border-radius: 5px;
 }
@@ -41,16 +66,9 @@ header {
 }
 .nav_links li a:hover {
     color: #DFCEBC
-
-}
-
-body {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
 }
 h4 {
     text-align: left;
-    
 }
 a:hover{
     color: #DFCEBC;
@@ -62,7 +80,12 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 50vh;
+    height: 70%;
+    position: relative;
+}
+#content-wrap {
+    padding-bottom: 2.5rem;    /* altura de pie de página */
 }
 .register{
     color: #000;
@@ -100,4 +123,129 @@ form {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+
+.grid_layout{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    padding: 20px;
+}
+.card{
+	width: 80%;
+	margin: 30px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	border-radius: 2px;
+	overflow: hidden;
+	background-color: #e7e6e5;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	cursor: default;
+	transition: all 400ms ease;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.card_bottom{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+.tags{
+	margin: auto;
+    align-self: center;
+    float: left;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tag_classification{
+	background-color: rgb(148, 144, 144);
+	padding:10px;
+	display: flex;
+	height: 15px;
+    width: 35px;
+	border-radius: 3px;
+    align-items: center;
+    float: left;
+    color: white;
+    margin: 5px;
+}
+.tag_classification:hover{
+	background-color: #4F6074;
+	color: white;
+}
+
+.tag_duration{
+	background-color: #1A2C50;
+	padding:10px;
+	display: flex;
+	height: 15px;
+    width: 100px;
+	border-radius: 3px;
+    align-items: center;
+    float: left;
+    color: white;
+    margin: 5px;
+}
+.tag_duration:hover{
+	background-color: #4F6074;
+	color: white;
+}
+.viewMore_btn{
+    font-family: "Montserrat", sans-serif;
+    background-color: #DFCEBC;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.viewMore_btn:hover{
+	background-color: #4F6074;
+	color: white;
+}
+.movie_container{
+    background-color: #e7e6e5;
+    margin: 10%;
+    padding: 50px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.movie_info{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    text-align: left;
+    background-color: #cbc9c8;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.movie_hours{
+    padding: 10px;
+    width: 100%;
+    float: left;
+}
+.tag_hour{
+    margin: 5px;
+    padding: 5px;
+    background-color: #1A2C50;
+    color: white;
+    border-radius: 3px;
+    height: fit-content;
+    width: fit-content;
+
 }
