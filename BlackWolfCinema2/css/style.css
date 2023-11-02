@@ -4,25 +4,50 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #F6F6F6;
-    
 }
-li,a {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    background-color: #1A2C50;
+}
+body {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 4em;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 80%;
+}
+footer {
+    background-color: #4F6074;
+    position: absolute;
+    bottom: 0;
+    padding: 1em 0;
+    width: 100%;
+    color: white;
+    height: 70px;  
+    text-align: center; 
+}
+a {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 16px;
     color:#FFFFFF;
     text-decoration: none;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: #1A2C50;
-
-}
 .logo {
+    cursor: pointer;
+    border-radius: 5px;
+}
+.index_link{
     cursor: pointer;
     border-radius: 5px;
 }
@@ -40,16 +65,16 @@ header {
     background-color: #1A2C50;
 }
 .nav_links li a:hover {
-    color: #DFCEBC;
+    color: #DFCEBC
+
 }
 
 body {
-    text-align: right;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
 }
 h4 {
     text-align: left;
-    
 }
 a:hover{
     color: #DFCEBC;
@@ -61,7 +86,12 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 50vh;
+    height: 70%;
+    position: relative;
+}
+#content-wrap {
+    padding-bottom: 2.5rem;    /* altura de pie de página */
 }
 .register{
     color: #000;
@@ -100,107 +130,3 @@ form {
     flex-direction: column;
     text-align: center;
 }
-
-.slider-box{
-    padding: 0;
-    width: 100%;
-    height: 400px;
-    margin: 0;
-    overflow: hidden;
-
-}
-
-.slider-box ul{
-    display: flex;
-    padding: 0;
-    margin: 0;
-    border-bottom: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-box li{
-    width: 100%;
-    list-style: none;
-    position: relative;
-}
-
-.slider-box img{
-    width: 100%;
-}
-
-@keyframes slide{
-    0%{
-        margin-left: 0;
-    }
-    20%{
-        margin-left: 0;
-    }
-    25%{
-        margin-left: -100%;
-    }
-    45%{
-        margin-left: -100%;
-    }
-    50%{
-        margin-left: -200%;
-    }
-    70%{
-        margin-left: -200%;
-    }
-    75%{
-        margin-left: -300%;
-    }
-    100%{
-        margin-left: -300%;
-    }
-}
-
-@media (max-width: 991px) {
-    .body{
-        padding: 30px;
-
-    }
-    .slider-box{
-        width: 100%;
-        height: 130px;
-    }
-
-    .logo{
-        width: 40%;
-
-    }
-
-    .header{
-        height: 50px;
-        justify-content: left;
-        align-items: left;
-        
-    }
-    .nav_links{
-        height: 70px;
-        background-color: #1A2C50;
-        padding: 0px ;
-        margin: 0;
-        border: 0;
-    }
-
-    .nav_links li{
-        display: block;
-        align-items: center;
-        padding: 0px ;
-        margin: 0;
-        border: 0;
-    }
-
-    .nav_links li a{
-        font-size: 10px;
-        padding: 0px ;
-        margin: 0;
-        border: 0;
-    }
-}
-
-
-
-
