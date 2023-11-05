@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/addmovie.css">
+    <link rel="stylesheet"  href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/blackWolfHorizontal.png" alt="logo">
+        </a>
+        <nav>
+            <ul class="nav_links">
+                <li class="nav_item"><a href="billboard.html">Cartelera</a></li>
+                <li class="nav_item"><a href="upcomingfilms.html">Proximos estrenos</a></li>
+                <li class="nav_item"><a href="account.html">Hola, @</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form>
+            <label for="movie-name">Nombre de la peliícula:</label>
+            <input type="text" id="movie-name" name="movie-name" required>
+            
+            <label for="duracion">Duración (minutos):</label>
+            <input type="number" id="duration" name="duration" required>
+            
+            <label for="genre">Género:</label>
+            <select id="genre" name="genre">
+                <option value="horror">Horror</option>
+                <option value="comedy">Comedia</option>
+                <option value="drama">Drama</option>
+                <option value="romance">Romance</option>
+                <option value="action">Acción</option>
+                <option value="adventure">Aventura</option>
+            </select>
+
+            <label for="actors">Actor/Actriz principal:</label>
+            <textarea id="actor" name="actor" required></textarea>
+
+            <label for="synopsis">Sinopsis:</label>
+            <textarea id="synopsis" name="synopsis" required></textarea>
+            
+            <label for="trailer">Link del trailer:</label>
+            <input type="text" id="trailer-link" name="trailer-link" required>
+
+            <input type="submit" value="Agregar Película">
+        </form>
+    </div>
+    <footer>
+        <p class="footer_text">Black Wolf Cinema ®</p>
+    </footer>
+</body>
+</html>
