@@ -11,39 +11,39 @@
     </head>
     <body>
         <header>
-            <a href="/login.html" class="index_link"><img class="logo" src="images/blackWolfHorizontal.png" alt="logo"></a>
+            <a href="login.html" class="index_link"><img class="logo" src="images/blackWolfHorizontal.png" alt="logo"></a>
             <nav>
               
             </nav>
         </header>
         <div class="container">
-            <form action="" class="signup_form">
+            <form action="" class="signup_form" id="formulario">
                 <h1>Crea tu cuenta</h1><br>
                 <label>
                     <h4>Nombre(s)</h4>
-                    <input type="text" id="name">
+                    <input type="text" name="nombre" id="name">
                 </label>
                 <label>
                     <h4>Apellido paterno</h4>
-                    <input type="text" id="first_lastanme">
+                    <input type="text" name="apellido_paterno" id="first_lastanme">
                 </label>
                 <label>
                     <h4>Apellido materno</h4>
-                    <input type="text" id="second_lastanme">
+                    <input type="text" name="apellido_materno" id="second_lastanme">
                 </label>
                 <label>
                     <h4>Email</h4>
-                    <input type="text" id="email">
+                    <input type="text" name="email" id="email">
                 </label>
                 <label>
                     <h4>Contraseña</h4>
-                    <input type="password" id="password">
+                    <input type="password" name="contraseña" id="password">
                 </label>
                 <label>
                     <h4>Confirmar contraseña</h4>
-                    <input type="password" id="password">
+                    <input type="password" id="RepeatPassword">
                 </label>
-                <button type="submit" formaction="#" class="signup_button">Crear Cuenta</button>
+                <button type="submit" formaction="#" class="signup_button desabilitado" disabled>Crear Cuenta</button>
 
             </form>
         </div>
@@ -51,4 +51,5 @@
             <p class="footer_text">Black Wolf Cinema ®</p>
         </footer>
     </body>
+    <script src="js/app.js"></script>
 </html>
